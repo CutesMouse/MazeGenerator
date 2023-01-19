@@ -62,8 +62,8 @@ public class Screen extends JPanel {
         //boarder
         g.fillRect(boarder_x - line_width / 2, boarder_y - line_width / 2, line_width, room_size_y * maze.getSize_y() + line_width);
         g.fillRect(boarder_x + room_size_x * maze.getSize_x() - line_width / 2, boarder_y - line_width / 2, line_width, room_size_y * maze.getSize_y() + line_width);
-        g.fillRect(boarder_x - line_width / 2, boarder_y - line_width / 2, +room_size_y * maze.getSize_y(), line_width);
-        g.fillRect(boarder_x - line_width / 2, boarder_y + room_size_y * maze.getSize_y() - line_width / 2, +room_size_y * maze.getSize_y(), line_width);
+        g.fillRect(boarder_x - line_width / 2, boarder_y - line_width / 2, +room_size_x * maze.getSize_y(), line_width);
+        g.fillRect(boarder_x - line_width / 2, boarder_y + room_size_y * maze.getSize_y() - line_width / 2, +room_size_x * maze.getSize_x(), line_width);
 
         //BFS Trace
         if (answer) {
